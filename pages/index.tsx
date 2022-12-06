@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import CupSelect from "./components/CupSelect";
-import DefaultCup from "./components/DefaultCup";
-import FlowerCup from "./components/FlowerCup";
-import MushroomCup from "./components/MushroomCup";
-import SpecialCup from "./components/SpecialCup";
-import StarCup from "./components/StarCup";
+import CupSelect from "../components/CupSelect";
+import DefaultCup from "../components/DefaultCup";
+import FlowerCup from "../components/FlowerCup";
+import MushroomCup from "../components/MushroomCup";
+import SpecialCup from "../components/SpecialCup";
+import StarCup from "../components/StarCup";
 import {
   AllCups,
   AllMapsPaths,
@@ -15,7 +15,7 @@ import {
   MushroomMapsImagePaths,
   specialMaps,
   starMaps,
-} from "./types";
+} from "../types";
 
 const getRandomInt = (max: number) => Math.floor(Math.random() * max);
 
