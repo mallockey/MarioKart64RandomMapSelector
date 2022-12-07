@@ -5,7 +5,7 @@ interface Props {
 
 const MapTitle = ({ mapName, isSelected }: Props) => {
   const mapStyle = isSelected
-    ? " w-full mb-4 h-16 p-4 text-2xl bg-black uppercase text-center text-white bg-slate-300 border-4 border-green-400 text-black font-bold"
+    ? "bg-slate-300 w-full mb-4 h-16 p-4 text-2xl  uppercase text-center border-4 border-green-400 text-black font-bold"
     : " w-full mb-4 h-16 p-4 text-2xl bg-black uppercase text-center text-white font-bold";
   return (
     <>
