@@ -83,7 +83,7 @@ export default function Home() {
     <main className="bg-white bg-background-kart min-h-full bg-cover flex flex-col flex-1">
       <div className="w-full flex justify-center flex-col items-center mb-8 ">
         <Image
-          className="mt-8 mb-8"
+          className="mt-8 mb-8 pr-8 pl-8 md:pr-0 md:pl-0"
           src="/mapselect.png"
           height={800}
           width={800}
@@ -181,7 +181,7 @@ export default function Home() {
       <div className="flex flex-col sm:flex-row justify-center items-center mt-12 w-full">
         <div>
           <Image
-            className="border-4 border-black mb-4 sm:mb-0"
+            className="border-4 border-black mb-4 sm:mb-0 w-72 md:w-96"
             height={400}
             width={400}
             src={selectedMap || MushroomMapsImagePaths.LUIGI_RACEWAY}
