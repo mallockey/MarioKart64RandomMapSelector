@@ -80,7 +80,7 @@ export default function Home() {
   }, [cup]);
 
   return (
-    <main className="bg-white bg-background-kart h-full  bg-cover flex flex-col">
+    <main className="bg-white bg-background-kart min-h-full bg-cover flex flex-col flex-1">
       <div className="w-full flex justify-center flex-col items-center mb-8 ">
         <Image
           className="mt-8 mb-8"
@@ -181,14 +181,14 @@ export default function Home() {
       <div className="flex flex-col sm:flex-row justify-center items-center mt-12 w-full">
         <div>
           <Image
-            className="border-4 border-black"
+            className="border-4 border-black mb-4 sm:mb-0"
             height={400}
             width={400}
             src={selectedMap || MushroomMapsImagePaths.LUIGI_RACEWAY}
             alt="selectedCup"
           />
         </div>
-        <div className="flex flex-row p-2 w-4/6 md:w-2/6 flex-wrap ">
+        <div className="p-2 hidden md:flex md:w-2/6 md:flex-wrap ">
           {!cup && !selectedMap && <DefaultCup />}
           {cup === Cup.MUSHROOM && selectedMap && (
             <MushroomCup selectedMap={selectedMap} />
