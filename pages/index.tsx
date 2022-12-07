@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import CupSelect from "../components/CupSelect";
@@ -81,6 +82,9 @@ export default function Home() {
 
   return (
     <main className="bg-white bg-background-kart min-h-full bg-cover flex flex-col flex-1">
+      <Head>
+        <title>Mario Kart 64 random map</title>
+      </Head>
       <div className="w-full flex justify-center flex-col items-center mb-8 ">
         <Image
           className="mt-8 mb-8 pr-8 pl-8 md:pr-0 md:pl-0"
