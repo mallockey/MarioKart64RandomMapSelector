@@ -21,8 +21,8 @@ const CupSelect = ({
   isLoading,
 }: Props) => {
   const buttonStyle = isSelected
-    ? "bg-slate-300 h-36 w-72 text-3xl text-purple-500 font-extrabold flex flex-col items-center justify-center uppercase ml-4 mr-4 border-black  border-4 cursor-pointer"
-    : "bg-black h-36 w-72 text-3xl text-purple-500 font-extrabold flex flex-col items-center justify-center uppercase ml-4 mr-4 cursor-pointer";
+    ? "bg-slate-300 mt-2 mb-2 w-32 p-2 md:w-72 md:h-36 w-72 text-3xl text-purple-500 font-extrabold flex flex-col items-center justify-center uppercase ml-4 mr-4 border-black  border-4 cursor-pointer"
+    : "bg-black  mt-2 mb-2 w-32 p-2 break-normal overflow-clip md:w-72 md:h-36    text-3xl text-purple-500 font-extrabold flex flex-col items-center justify-center uppercase ml-4 mr-4 cursor-pointer";
   return (
     <button onClick={onClick} className={buttonStyle}>
       {isLoading ? (

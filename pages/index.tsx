@@ -80,7 +80,7 @@ export default function Home() {
   }, [cup]);
 
   return (
-    <main className="bg-white bg-background-kart h-full w-full bg-cover flex flex-col">
+    <main className="bg-white bg-background-kart h-full  bg-cover flex flex-col">
       <div className="w-full flex justify-center flex-col items-center mb-8 ">
         <Image
           className="mt-8 mb-8"
@@ -108,7 +108,7 @@ export default function Home() {
           isLoading={allCupsIsLoading}
         />
       </div>
-      <div className="flex w-full justify-center">
+      <div className="flex w-full justify-center flex-wrap">
         <CupSelect
           cupTitle="Mushroom Cup"
           imagePath="/mushroom.png"
@@ -188,7 +188,7 @@ export default function Home() {
             alt="selectedCup"
           />
         </div>
-        <div className="flex flex-col p-2 w-2/6">
+        <div className="flex flex-row p-2 w-4/6 md:w-2/6 flex-wrap ">
           {!cup && !selectedMap && <DefaultCup />}
           {cup === Cup.MUSHROOM && selectedMap && (
             <MushroomCup selectedMap={selectedMap} />
