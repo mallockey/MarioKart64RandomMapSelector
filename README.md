@@ -1,4 +1,4 @@
-## Mario Kart 64 Random Map Selector
+# Mario Kart 64 Random Map Selector
 
 I hadn't seen a random Mario Kart 64 map selector that allowed you to choose by cup so here it is.
 
